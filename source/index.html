@@ -2,28 +2,21 @@
 layout: default
 ---
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+<h2>Being Present</h2>
+<h3>A talk about Surfing and the Meaning of Life</h3>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/7XDmJZ3eDbI?rel=0" frameborder="0" allowfullscreen></iframe>
+<h3><a href="https://github.com/jacobo/being_present">Slides</a></h3>
+
+<hr/><br/>
+
+<h2>Building Services: Lessons from Engine Yard Add-ons</h2>
+<h3>A talk about building APIs</h3>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/jk88Da3jm3c?rel=0" frameborder="0" allowfullscreen></iframe>
+<h3><a href="https://github.com/jacobo/being_present">Slides</a></h3>
+
+<hr/><br/>
+
+<h2>Living with Distributed Systems</h2>
+<h3>A different talk about building APIs</h3>
+<h3>Video Coming Soon: <a href="http://www.youtube.com/user/Rubyfuza?feature=watch">check here</a></h3>
+<h3><a href="https://github.com/jacobo/distributed_systems">Slides</a></h3>

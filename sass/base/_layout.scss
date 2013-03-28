@@ -93,6 +93,9 @@ body {
   overflow: hidden;
   > div, > article { width: 100%; }
 }
+.withpadding {
+  padding: $pad-medium;
+}
 
 aside.sidebar {
   float: none;
