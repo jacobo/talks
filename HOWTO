@@ -1,6 +1,0 @@
-
-  bundle exec rake preview
-  
-  bundle exec rake generate  
-  bundle exec rake push
-  
